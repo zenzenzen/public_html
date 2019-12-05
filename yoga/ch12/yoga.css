@@ -153,12 +153,6 @@ audio{
   display: block;
   margin: 1em;
 }
-section{
-  width: 90%;
-  padding: 1em;
-  margin: 1em 0 1em 0;
-  background-color: #C8DDDE;
-}
 #mySubmit{
   margin-left: 12em;
 }
