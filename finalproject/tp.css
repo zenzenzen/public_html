@@ -44,7 +44,7 @@ figcaption{
     left: 0;
     opacity: 1;
     z-index: 0;
-    border: 1px black solid;
+    border-bottom: 2px black solid;
 }
 #nav-banner h1{
     text-align: center;
@@ -54,9 +54,10 @@ figcaption{
     width: 85%;
     color: #000000;
     background-color: #FCE5E5;
-    margin-left: 8%;
+    margin-left: 8%; 
 }
 
+/* forcing bag to be on top of everything */
 #bag{
     position: relative;
     float: right;
@@ -79,13 +80,18 @@ input[type=text]{
     display: inline-flex;
     position: fixed;
     justify-content: center;
+    padding-top: .5em;
+    height: 5%;
+    width: 100%;
+    top: 6.1em;
+    left: 0px;
+    z-index: 0;
+    vertical-align: baseline;
+    text-decoration: none;
     background-color: #FFF7F7;
     color: black;
-    top: 5.8em;
-    left: 0;
-    text-decoration: none;
     font-family: Karla;
-    width: 100%;
+    /* specifying scrollbar fx */
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.15);
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
 }
@@ -106,10 +112,11 @@ main{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    top: 7em;
-    margin-top: 5%;
+    margin-top: 2%;
     z-index: 0;
+    /* just going to leave this wide open
+    for more specific classes */
 }
 .hero-splash{
-    margin-top: 5%;
+    margin-top: 3%;
 }
