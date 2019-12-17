@@ -65,9 +65,6 @@ figcaption{
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
     z-index: 1;
 }
-#bag:hover{
-    
-}
 /*current measure to enforce search bar styling*/
 input[type=text]{
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.15);
