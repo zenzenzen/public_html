@@ -20,6 +20,20 @@ a{
     font-size: 1.1em;
     font-weight: bolder;
 }
+a:hover{
+    color: rgb(226, 75, 75);
+}
+dt a:hover{ color: rgb(226, 75, 75);}
+dd a:hover{ color: rgb(226, 75, 75);}
+dt{
+    margin-top: 2em;
+    font-weight: bolder;
+    line-height: 150%;
+    font-size: 1.25em;
+}
+dd{
+    margin-top: .5em;
+}
 body{
     display: block;
 }
@@ -30,6 +44,12 @@ figure{
 figcaption{
     font-family: Karla;
 }
+header{     
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    margin-top: 4em;
+    text-align: center;
+}
 main{
     display: flex;
     justify-content: center;
@@ -38,11 +58,29 @@ main{
     z-index: 0;
     /* just going to leave this wide open
     for more specific classes */
+    font-family: Karla;
+}
+footer{
+    font-family: Helvetica, Arial,  sans-serif;
+    font-size: smaller;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(0,0,0,0.25);
+    margin-top: 3em;
 }
 .shoppingmain{
-    display: flex;
-    justify-content: space-between;
+    display: inline-flex;
+    justify-content:flex-start;
     flex-flow: row;
+    width: 100%;
+}
+.categories{
+    margin-left: 2em;
+    padding-right: 3em;
+    padding-left: 1em;
+    width: 30%;
+    border-right: 2px rgba(0,0,0,0.15) solid;
+    font-family: Helvetica, Arial, sans-serif;
 }
 .searchbar{
     border-radius: 25px;
@@ -51,13 +89,36 @@ main{
     background-color: #FCE5E5;
     margin-left: 8%; 
 }
+.products-area{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row
+}
+.products-item{
+    flex: 1 0 21%;
+    display: flex;
+    flex-flow: column;/* to contain individual listing items*/
+    max-width: 33%;
+    max-height: 55%;
+    margin: 2em 2em 0 2em;
+}
+.products-item img{
+    max-width: 100%;
+    height: 300px;
+}
+.products-item details{
+    font-size: small;
+}
+.product-price{
+    font-weight: bold;
+}
 .shoplinks{
     color: black;
     margin: 0 2.5em;    
 }
 .shoplinks a:hover{
     color: rgb(226, 75, 75);
-
 }
 .shoplinks a:visited{
     color: rgb(100, 59, 59);
