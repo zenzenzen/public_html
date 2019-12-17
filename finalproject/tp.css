@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Karla|Pacifico&display=swap');
+
+/* HTML element selector styling */
+nav{
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: column;
+}
+h1{
+    font-family: Pacifico;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+input{
+    background-color: #ffffff;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-weight: bolder;
+}
+/*nav-bar-container--static position*/
+#nav-banner{
+    display: inline-block;
+    flex-direction: column;
+    position: fixed;
+    background-color: #FCE5E5; 
+    width: 100%;
+    line-height: 1em;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 1;
+    border: 1px black solid;
+    /* testing drop shadow.
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.15);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
+    */
+}
+#nav-banner h1{
+    text-align: center;
+}
+#searchbar{
+    border-radius: 25px;
+    width: 85%;
+    color: #000000;
+    background-color: #FCE5E5;
+    margin-left: 8%;
+}
+
+/*current measure to enforce search bar styling*/
+input[type=text]{
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.15);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
+    background-image: url(./assets/search.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: white;
+}
+/*Flexibile links row bar under search*/
+#links-banner{
+    display: inline-flex;
+    position: fixed;
+    justify-content: center;
+    background-color: #FFF7F7;
+    color: black;
+    top: 6.2em;
+    text-decoration: none;
+    font-family: Karla;
+    width: 100%;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.15);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
+}
+.shoplinks{
+    color: black;
+    margin: 0 2.5em;    
+}
+.shoplinks a:hover{
+    color: rgb(226, 75, 75);
+
+}
+.shoplinks a:visited{
+    color: rgb(100, 59, 59);
+}
+
+/* For the landing splash page body, general content */
+main{
+    display: flexbox;
+    justify-content: center;
+    flex-direction: column;
+    top: 7em;
+}
+.hero-splash{
+    width: 80%;
+    margin: 1.5em 0;
+}
