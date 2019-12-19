@@ -66,6 +66,7 @@ main{
     for more specific classes */
     font-family: Karla;
 }
+/* media centering */
 iframe{
     margin: 6em auto 0 auto;
 }
@@ -75,7 +76,7 @@ footer{
     text-align: center;
     text-decoration: none;
     color: rgba(0,0,0,0.25);
-    margin-top: 3em;
+    margin-top: 14em;
 }
 
 /* BEGIN CLASS DEFINITIONS */
@@ -111,8 +112,8 @@ footer{
     display: flex;
     flex-flow: column;/* to contain individual listing items*/
     max-width: 33%;
-    max-height: 55%;
-    margin: 2em 2em 0 2em;
+    height: 25%;
+    margin: 3em 2em 0 2em;
 }
 .products-item img{
     max-width: 100%;
@@ -213,7 +214,7 @@ footer{
 }
 /* forcing bag to be on top of everything */
 #bag{
-    position: relative;
+    position: fixed;
     float: right;
     right: 0;
     top: 0;
