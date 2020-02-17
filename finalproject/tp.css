@@ -3,7 +3,6 @@
 /* HTML element selector styling */
 nav{
     display: flex;
-    display: -webkit-flex;
     flex-flow: column;
 }
 h1{
@@ -22,6 +21,12 @@ a{
 }
 a:hover{
     color: rgb(226, 75, 75);
+}
+section{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    text-align: left;
 }
 dt a:hover{ color: rgb(226, 75, 75);}
 dd a:hover{ color: rgb(226, 75, 75);}
@@ -44,10 +49,11 @@ figure{
 figcaption{
     font-family: Karla;
 }
-header{     
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 2em;
-    margin-top: 4em;
+table{
+    margin-top: 2em;
+    width: 100%;
+}
+td{
     text-align: center;
 }
 main{
@@ -60,14 +66,20 @@ main{
     for more specific classes */
     font-family: Karla;
 }
+/* media centering */
+iframe{
+    margin: 6em auto 0 auto;
+}
 footer{
     font-family: Helvetica, Arial,  sans-serif;
     font-size: smaller;
     text-align: center;
     text-decoration: none;
     color: rgba(0,0,0,0.25);
-    margin-top: 3em;
+    margin-top: 14em;
 }
+
+/* BEGIN CLASS DEFINITIONS */
 .shoppingmain{
     display: inline-flex;
     justify-content:flex-start;
@@ -100,8 +112,8 @@ footer{
     display: flex;
     flex-flow: column;/* to contain individual listing items*/
     max-width: 33%;
-    max-height: 55%;
-    margin: 2em 2em 0 2em;
+    height: 25%;
+    margin: 3em 2em 0 2em;
 }
 .products-item img{
     max-width: 100%;
@@ -123,12 +135,67 @@ footer{
 .shoplinks a:visited{
     color: rgb(100, 59, 59);
 }
+/* create underline and set up table organization */
+.table-heading th{
+    border-bottom: 2px #000000 solid;
+}
 
 /* For the landing splash page body, general content */
 
 .hero-splash{
     margin-top: 3%;
 }
+.bag-area{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+}
+.bag-banner{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    vertical-align: middle;
+    margin-top: 6em;
+    width: 100;
+}
+.bag-banner button{
+    border: 1px black solid;
+    width: 30%;
+    background-color: #FAAFAF;
+    margin-top: 2em;
+    vertical-align: middle;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+.bag-banner h1{
+    vertical-align: middle;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    padding: .5em 3em;
+    border: 2px black solid;
+}
+.bag-qty-box{
+    height: 78px;
+    width: 78px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #FFF6F6;
+    border: 1px solid #AAAAAA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+.bag-qty-box p{ 
+    font-size: 2em; 
+    font-weight: bold;
+}
+.checkout-button{ height: 60px;}
+.checkout-button a{ 
+    display: block;
+    font-size: 1.5em;    
+}
+/* BEGIN ID DEFINITIONS */
 /*nav-bar-container--static position*/
 #nav-banner{
     display: inline-block;
@@ -147,7 +214,7 @@ footer{
 }
 /* forcing bag to be on top of everything */
 #bag{
-    position: relative;
+    position: fixed;
     float: right;
     right: 0;
     top: 0;
@@ -159,7 +226,7 @@ footer{
 }
 /*current measure to enforce search bar styling*/
 input[type=text]{
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.15);
+    
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
     background-image: url(./assets/search.png);
     background-repeat: no-repeat;
@@ -183,6 +250,6 @@ input[type=text]{
     color: black;
     font-family: Karla;
     /* specifying scrollbar fx */
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.15);
+    
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
 }
